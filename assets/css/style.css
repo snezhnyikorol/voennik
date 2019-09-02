@@ -1,0 +1,47 @@
+.section_title-big {
+    color: #ffffff;
+    font-family: "Circe - Extra Bold";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.6px;
+}
+
+.header {
+    background: url(../img/header/background.png) center/cover no-repeat;
+    background-color: #6f2c33;
+}
+
+.header_subtitle {
+    opacity: 0.8;
+    color: #ffffff;
+    font-family: Circe;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.24px;
+}
+
+.btn-primary {
+    color: #010101;
+    font-family: Circe;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.18px;
+    border-radius: 5px;
+    background-color: #f5f749;
+}
+
+.header_item {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Circe - Regular";
+    font-weight: 400;
+    letter-spacing: 0.18px;
+}
+
+.header_item-highlighted {
+    color: #f5f749;
+    font-family: "Circe - Bold";
+    font-weight: 700;
+    letter-spacing: 0.18px;
+}
