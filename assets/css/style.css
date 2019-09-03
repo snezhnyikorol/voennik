@@ -21,9 +21,9 @@ header {
 
 .section_title-big {
     color: #ffffff;
-    font-family: "Circe - Extra Bold";
+    font-family: Circe;
     font-size: 60px;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 60px;
     letter-spacing: 0.6px;
 }
@@ -72,7 +72,7 @@ header {
 .header_item {
     color: #ffffff;
     font-size: 18px;
-    font-family: "Circe - Regular";
+    font-family: Circe;
     font-weight: 400;
     letter-spacing: 0.18px;
     margin: 15px 0;
@@ -84,7 +84,7 @@ header {
 
 .header_item-highlighted {
     color: #f5f749;
-    font-family: "Circe - Bold";
+    font-family: Circe;
     font-weight: 700;
     letter-spacing: 0.18px;
 }
