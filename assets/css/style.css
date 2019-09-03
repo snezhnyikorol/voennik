@@ -3,45 +3,22 @@
   padding: 0;
 }
 
-header {
-  padding: 30px 0;
-}
-
-.logo {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-}
-
-.nav_link {
-  color: #000000;
+.btn-primary {
+  color: #010101;
   font-family: Circe;
   font-size: 18px;
+  line-height: 18px;
   font-weight: 700;
+  letter-spacing: 0.18px;
+  border-radius: 5px;
+  background-color: #f5f749;
+  border: none;
+  border-bottom: solid 4px #9fa02e;
+  padding: 20px 36px;
 }
 
 section {
   position: relative;
-}
-
-.military {
-  background: url(../img/military.png) center/cover no-repeat;
-  background-color: #6f2c33;
-}
-
-.phone_container {
-  color: #000000;
-  font-weight: 700;
-  letter-spacing: 0.2px;
-}
-
-.phone_container h5 {
-  font-size: 20px;
-}
-
-.phone_container h6 {
-  font-size: 14px;
-  opacity: 0.5;
 }
 
 .section_title {
@@ -61,6 +38,43 @@ section {
     letter-spacing: 0.6px;
 }
 
+.military {
+  background: url(../img/military.png) center/cover no-repeat;
+  background-color: #6f2c33;
+}
+
+header {
+  padding: 30px 0;
+}
+
+.logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+.nav_link {
+  color: #000000;
+  font-family: Circe;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.phone_container {
+  color: #000000;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.phone_container h5 {
+  font-size: 20px;
+}
+
+.phone_container h6 {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
 .main {
     background: url(../img/main/background.png) center/cover no-repeat;
     background-color: #6f2c33;
@@ -74,20 +88,6 @@ section {
     font-size: 24px;
     font-weight: 700;
     letter-spacing: 0.24px;
-}
-
-.btn-primary {
-    color: #010101;
-    font-family: Circe;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 700;
-    letter-spacing: 0.18px;
-    border-radius: 5px;
-    background-color: #f5f749;
-    border: none;
-    border-bottom: solid 4px #9fa02e;
-    padding: 20px 36px;
 }
 
 .main .section_title-big {
@@ -163,6 +163,11 @@ section {
 .how_container {
   list-style: none;
   margin-top: 65px;
+}
+
+.how_container::before {
+  border-left: solid 1px #d4bdbf;
+  height: 100%;
 }
 
 .how_item {
