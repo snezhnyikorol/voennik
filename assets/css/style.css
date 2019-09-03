@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+  padding: 0;
+}
+
 header {
   padding: 30px 0;
 }
@@ -45,9 +50,8 @@ section {
 }
 
 .section_title {
-  color: #000000;
   font-family: Circe;
-  font-size: 60px;
+  font-size: 48px;
   font-weight: 800;
   letter-spacing: 0.6px;
 }
@@ -143,6 +147,52 @@ section {
   z-index: 1;
 }
 
+/* pluces */
+.pluces {
+  padding-bottom: 100px;
+}
+
+.pluces .section_title {
+  color: #000;
+}
+
+.pluces .section_title span {
+  color: #78221f;
+}
+
+.pluces_row {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+}
+
+.pluces_row li {
+  counter-increment: my-awesome-counter;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pluces_row li::before {
+  content: "" counter(my-awesome-counter);
+  opacity: 0.2;
+  color: #78221f;
+  font-size: 120px;
+  font-weight: 800;
+  font-family: Circe;
+}
+
+.pluces_col-text-container { 
+  padding: 30px 0 0 33px;
+}
+
+.pluces_col-text-container h2 {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.pluces_col-text-container p {
+  font-size: 18px;
+  padding-top: 10px;
+}
 
 /* test */
 
