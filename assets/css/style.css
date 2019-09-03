@@ -46,10 +46,18 @@ header {
     color: #010101;
     font-family: Circe;
     font-size: 18px;
+    line-height: 18px;
     font-weight: 700;
     letter-spacing: 0.18px;
     border-radius: 5px;
     background-color: #f5f749;
+    border: none;
+    border-bottom: solid 4px #9fa02e;
+    padding: 20px 36px;
+}
+
+.header_list {
+  list-style: none;
 }
 
 .header_item {
@@ -58,6 +66,10 @@ header {
     font-family: "Circe - Regular";
     font-weight: 400;
     letter-spacing: 0.18px;
+}
+
+.header_item-image {
+  padding-right: 20px;
 }
 
 .header_item-highlighted {
