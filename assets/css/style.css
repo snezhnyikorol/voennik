@@ -1,3 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.nav_link {
+  color: #000000;
+  font-family: Circe;
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .section_title-big {
     color: #ffffff;
     font-family: "Circe - Extra Bold";
