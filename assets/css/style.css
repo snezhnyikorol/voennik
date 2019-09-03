@@ -3,11 +3,12 @@
   padding: 0;
 }
 
-<<<<<<< HEAD
+
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
-=======
+}
+
 .btn-primary {
   color: #010101;
   font-family: Circe;
@@ -46,7 +47,6 @@ section {
 .military {
   background: url(../img/military.png) center/cover no-repeat;
   background-color: #6f2c33;
->>>>>>> fd0fc23044683d6afb5be18ef36cfd0e017228ab
 }
 
 header {
