@@ -19,6 +19,10 @@ header {
   font-weight: 700;
 }
 
+section {
+  padding-bottom: 80px;
+}
+
 .section_title-big {
     color: #ffffff;
     font-family: Circe;
@@ -28,12 +32,12 @@ header {
     letter-spacing: 0.6px;
 }
 
-.header {
-    background: url(../img/header/background.png) center/cover no-repeat;
+.main {
+    background: url(../img/main/background.png) center/cover no-repeat;
     background-color: #6f2c33;
 }
 
-.header_subtitle {
+.main_subtitle {
     opacity: 0.8;
     color: #ffffff;
     font-family: Circe;
@@ -56,20 +60,20 @@ header {
     padding: 20px 36px;
 }
 
-.header .section_title-big {
+.main .section_title-big {
   margin-top: 70px;
 }
 
-.header_subtitle {
+.main_subtitle {
   margin: 30px 0 50px 0;
 }
 
-.header_list {
+.main_list {
   list-style: none;
   margin-top: 50px;
 }
 
-.header_item {
+.main_item {
     color: #ffffff;
     font-size: 18px;
     font-family: Circe;
@@ -78,13 +82,17 @@ header {
     margin: 15px 0;
 }
 
-.header_item-image {
+.main_item-image {
   padding-right: 20px;
 }
 
-.header_item-highlighted {
+.main_item-highlighted {
     color: #f5f749;
     font-family: Circe;
     font-weight: 700;
     letter-spacing: 0.18px;
+}
+
+.main_ticket {
+  position: absolute;
 }
