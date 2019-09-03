@@ -143,6 +143,16 @@ header {
   z-index: 1;
 }
 
+.main .btn {
+  position: relative;
+}
+
+.main .btn::before {
+  content: url(../img/main/arrow.png);
+  position: absolute;
+  right: -96px;
+  bottom: 10px;
+}
 
 /* test */
 
@@ -166,8 +176,14 @@ header {
 }
 
 .how_container::before {
-  border-left: solid 1px #d4bdbf;
-  height: 100%;
+  border-left: solid 1px #d4bdbf88;
+  height: 450px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 28px;
+  z-index: 1;
 }
 
 .how_item {
@@ -181,6 +197,7 @@ header {
 .how_bullet {
   align-self: center;
   padding-right: 30px;
+  z-index: 2;
 }
 
 .how_bullet-green {
@@ -208,3 +225,16 @@ header {
   padding: 115px 0 110px 0;
 }
 
+/* receive */
+
+.receive {
+  padding: 100px 0 50px 0;
+}
+
+.receive p {
+  color: #000000;
+  font-family: Circe;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.24px;
+}
