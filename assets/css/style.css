@@ -44,6 +44,15 @@ section {
     letter-spacing: 0.6px;
 }
 
+.section_title-big {
+    color: #ffffff;
+    font-family: Circe;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.6px;
+}
+
 .military {
   background: url(../img/military.png) center/cover no-repeat;
   background-color: #6f2c33;
@@ -79,22 +88,6 @@ header {
 .phone_container h6 {
   font-size: 14px;
   opacity: 0.5;
-}
-
-.section_title {
-  font-family: Circe;
-  font-size: 60px;
-  font-weight: 800;
-  letter-spacing: 0.6px;
-}
-
-.section_title-big {
-    color: #ffffff;
-    font-family: Circe;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 60px;
-    letter-spacing: 0.6px;
 }
 
 
