@@ -375,13 +375,13 @@ header {
 }
 
 /* questions */
-.questions_container {
+.questions_card {
   border-radius: 30px;
   border: 2px solid #e8e8e8;
   padding: 27px 40px;
 }
 
-.questions_container {
+.questions_card-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
