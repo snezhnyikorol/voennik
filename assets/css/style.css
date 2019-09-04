@@ -318,7 +318,6 @@ header {
   background-color: #6f2c33;
   padding: 54px 38px 23px;
   color: #fff;
-  margin-top: 30px;
   min-height: 540px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -349,4 +348,25 @@ header {
 .price_card-cost h6 {
   font-size: 18px;
   font-weight: 400;
+}
+
+.price_consultation {
+  border-radius: 30px;
+  background: url(../img/military.png) center/cover;
+  padding: 50px 80px;
+  color: #000;
+}
+
+.price_consultation h5 {
+  color: #111111;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.price_consultation p {
+  font-family: Circe;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 36px;
+  margin-bottom: 50px;
 }
