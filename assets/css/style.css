@@ -55,6 +55,8 @@ section {
 .military {
   background: url(../img/military.png) center/cover no-repeat;
   background-color: #6f2c33;
+  padding: 115px 0 110px 0;
+  color: #fff;
 }
 
 header {
@@ -272,9 +274,9 @@ header {
   right: 0px;
 }
 
-/* free_consult */
+/* military */
 
-.free_consult_subtitle {
+.military_subtitle {
   color: #ffffff;
   font-family: Circe;
   font-size: 30px;
@@ -283,9 +285,10 @@ header {
   padding: 35px 0 40px 0;
 }
 
-.free_consult {
-  padding: 115px 0 110px 0;
+.military .section_title {
+  color: #fff;
 }
+
 
 /* receive */
 
