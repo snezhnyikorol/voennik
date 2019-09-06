@@ -1,23 +1,32 @@
-let data
-
-// console.log(fetch('./assets/json/data.json'))
 
 let fetchEr = () => {
     fetch('./assets/json/data.json')
-    .then(response => {response.json();})
-    .then(result => {
-        this.reorder(result.slice(0,result.keys().length), 3);
-        // this.setState({ cardsOG: result.slice(0,this.state.maxCards) });
+    .then(response => { 
+        return response.json();
     })
-    .catch(e => e);
+    .then(result => {
+        let myArray = [];
+        $.each(result, function(key, value) { 
+        myArray.push(value);
+        });
+        // let data = reorder(myArray, 3);
+        let data = myArray;
+        render(data);
+        // $('.review_container').masonry({
+        //     itemSelector: '.review_item',
+        //     columnWidth: 360,
+        //     horizontalOrder: true,
+        //     gutter: 15
+        // });
+    }, false)
+    .catch(e => {
+        console.log(e);
+        return e;
+    });
 }
 
+
 let reorder = (arr, columns) => {
-    // READ HERE
-    // this is the magic
-    // re-order the array so the "cards" read left-right
-    // cols === CSS column-count value
-    
     const cols = columns;
     const out = [];
     let col = 0;
@@ -29,14 +38,42 @@ let reorder = (arr, columns) => {
         }
         col++;
     }
-    // this.setState({ cards: out, columns: columns });
-    console.log(out);
-    data = out;
-    
-    // yes, I know Nick... you had another slicker ES6-y implementation
-    // but this one I could understand :)
+    return out;
 }
 
 fetchEr();
 
-// console.log(data)
+let render = (data) => {
+    let container = $('.review_container');
+    data.forEach(el => {
+        if (el.type === 'video') {
+            $('<div/>', {
+                class: 'review_item',
+                append: $('<video>', {
+                    class: 'review_video',
+                    src: el.src,
+                    poster: el.poster
+                })
+            }).appendTo(container);
+        } else if (el.type === 'article') {
+            $('<div/>', {
+                class: 'review_item',
+                append: $('<div/>', {
+                    class: 'review_header row',
+                    append: $('<img>', {
+                        class: 'review_image',
+                        src: el.image
+                    }).add($('<h3>', {
+                        class: 'review_title',
+                        text: el.title
+                    }))
+                }).add($('<p>', {
+                    class: 'review_text',
+                    text: el.text
+                }))
+            }).appendTo(container);
+        }
+    });
+}
+
+
