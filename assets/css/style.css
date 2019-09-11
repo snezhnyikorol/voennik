@@ -1,4 +1,4 @@
-html {
+body, html {
   overflow-x: hidden;
 }
 
@@ -270,7 +270,7 @@ header {
 .main_ticket {
   position: absolute;
   top: 240px;
-  right: 250px;
+  right: 9%;
 }
 
 .main_ticket-img {
@@ -357,6 +357,11 @@ header {
   padding: 15px 0 40px 0;
 }
 
+.test_tel-img {
+  position: relative;
+  z-index: 2;
+}
+
 /* how */
 .how {
   padding: 120px 0 85px 0;
@@ -373,7 +378,7 @@ header {
   content: '';
   display: block;
   position: absolute;
-  top: 100px;
+  top: 120px;
   left: 28px;
   z-index: 1;
 }
@@ -601,6 +606,19 @@ header {
 }
 /* feedback */
 
+.feedback {
+  margin-top: 70px;
+  z-index: 3;
+}
+
+.feedback .section_title {
+  margin-bottom: 100px;
+}
+
+.feedback_item {
+  margin-bottom: 36px;
+}
+
 .feedback_label, .feedback_subtitle {
   color: #b8b8b8;
   font-family: Circe;
@@ -706,6 +724,7 @@ header {
 	background: url('../img/yandex-before-load.jpg') #ffffff no-repeat;
 	background-position: center center;
 	background-size: cover;
+  margin-top: 100px;
 	/* box-shadow: 0 0 2em  0 rgba(0,0,0,.2); */
   }
    
@@ -867,4 +886,57 @@ footer {
 
 .footer_social {
   margin-top: 50px;
+}
+
+@media screen and (max-width: 1500px) {
+  .main_ticket {
+    right: 2%;
+    transform: scale(0.8);
+    z-index: 2;
+    top: 230px;
+  }
+
+  .how_ticket {
+    right: -130px;
+    transform: scale(0.9);
+
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section_title-big {
+    font-size: 50px;
+  }
+
+  .test_subtitle {
+    font-size: 26px;
+  }
+
+  .main_subtitle {
+    font-size: 20px;
+  }
+
+  .main_item {
+    font-size: 14px;
+  }
+
+  .pluces_col-text-container h2 {
+    font-size: 24px;
+  }
+
+  .pluces_col-text-container p {
+    font-size: 16px;
+  }
+
+  .pluces {
+    padding-bottom: 60px;
+  }
+
+  .how_item {
+    font-size: 20px;
+  }
+
+  .how_container::before {
+    height: 400px;
+  }
 }
