@@ -400,7 +400,56 @@
     </div>
   </section>
 
-  <section class="map" id="map">
+  <section class="feedback">
+    <div class="container">
+      <h1 class="section_title text-center">Контактная информация</h1>
+      <div class="d-flex flex-row">
+        <form class="col-12 col-md-5 d-flex flex-column">
+          <label for="name" class="feedback_label">Введи свое имя*</label>
+          <input id="name" type="text" class="feedback_input" placeholder="Например:  Сергей">
+          <label for="phone" class="feedback_label">Введи контакктный номер телефона*</label>
+          <input id="phone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
+          <label for="text" class="feedback_label"></label>
+          <textarea rows="7" id='text' placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
+          <a href="" class="btn btn-primary">Отправить сообщение</a>
+        </form>
+        <div class="feedback_info col-12 col-md-6 offset-md-1">
+          <div class="feedback_item d-flex flex-row">
+            <img src="./assets/img/feedback/geo.png" alt="" class="feedback_img">
+            <div class="">
+              <p class="feedback_subtitle">Местоположение</p>
+              <a class="feedback_geo" href="">г. Минск, ул. Зыбицкая 4, офис 39</a>
+            </div>
+          </div>
+          <div class="feedback_item d-flex flex-row">
+            <img src="./assets/img/feedback/phone.png" alt="" class="feedback_img">
+            <div class="">
+              <p class="feedback_subtitle">Телефоны</p>
+              <div class="d-flex flex-row">
+                <a class="feedback_phone" href="">+375 33 620-20-23</a>
+                <a class="feedback_phone" href="">+375 29 628-20-23</a>
+              </div>
+            </div>
+          </div>
+          <div class="feedback_item d-flex flex-row">
+            <img src="./assets/img/feedback/watch.png" alt="" class="feedback_img">
+            <div class="">
+              <p class="feedback_subtitle">Режим работы</p>
+              <p class="feedback_schedule">Офис: ПН-СБ 09:00-18:00</p>
+              <p class="feedback_schedule">Горячая линия: Круглосуточно</p>
+            </div>
+          </div>
+          <h3 class="feedback_title">Или пиши нам в удобный мессенджер</h3>
+          <div class="feedback_social">
+            <div class="d-flex flex-row"><a href="" class="feedback_social-item"><img src="./assets/img/feedback/telegram.png" alt="" class="feedback_social-img">@voennik.helpbot</a></div>
+            <div class="d-flex flex-row"><a href="" class="feedback_social-item"><img src="./assets/img/feedback/vk.png" alt="" class="feedback_social-img">/netkirzacham&nbsp;&nbsp;<span>(тут еще мемы смешные есть)</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map lined_top lined_bot" id="map">
     <div class="ymap-container">
       <div class="loader loader-default"></div>
       <div id="map-yandex"></div>
