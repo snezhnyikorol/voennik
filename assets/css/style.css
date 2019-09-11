@@ -386,6 +386,10 @@ header {
   margin: 20px 0;
 }
 
+.how_item span {
+  font-weight: 700;
+}
+
 .how_bullet {
   align-self: center;
   padding-right: 30px;
