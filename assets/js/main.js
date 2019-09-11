@@ -11,8 +11,22 @@ $(window).scroll(function(){
   
     checkMap()
   });
-  
 
+  let menuState = true;
+  $('.menu_btn').click(function () {
+    menuState = !menuState;
+    if (menuState) {
+      $('.menu_mobile').slideUp('slow')
+      $('.burger-1').css({'transform': 'rotate(0deg)', 'top': '0px'})
+      $('.burger-2').css({'transform': 'scale(1)'})
+      $('.burger-3').css({'transform': 'rotate(0deg)', 'top': '12px'})
+    } else {
+      $('.menu_mobile').slideDown('slow')
+      $('.burger-1').css({'transform': 'rotate(45deg)', 'top': '6px'})
+      $('.burger-2').css({'transform': 'scale(0)'})
+      $('.burger-3').css({'transform': 'rotate(-45deg)', 'top': '6px'})
+    }
+  })
 
 let fetchEr = () => {
     fetch('./assets/json/data.json')
