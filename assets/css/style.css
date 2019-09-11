@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +53,6 @@ h1, h2, h3, h4, h5, h6, p, a {
 
 section {
   position: relative;
-  overflow: hidden;
 }
 
 .section_title {
@@ -81,25 +84,26 @@ section {
   border-top-left-radius: 80%;
   border-top-right-radius: 80%;
   width: 100%;
-  height: 310px;
+  height: 125px;
   content: '';
   display: block;
   background-color: #ffffff;
   position: absolute;
-  bottom: -250px;
+  bottom: -100px;
   transform: scale(1.2);
 }
 
 .lined_top::before {
-  border-bottom-left-radius: 100%;
-  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 80%;
+  border-bottom-right-radius: 80%;
   width: 100%;
-  height: 70px;
+  height: 125px;
   content: '';
   display: block;
   background-color: #ffffff;
   position: absolute;
-  top: 0;
+  top: -100px;
+  transform: scale(1.2);
 }
 
 .military {
