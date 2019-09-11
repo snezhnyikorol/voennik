@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   padding-top: 100px;
 }
