@@ -13,6 +13,9 @@ $(window).scroll(function(){
   });
 
   let menuState = true;
+
+  var $root = $('html, body');
+
   $('.menu_btn').click(function () {
     menuState = !menuState;
     if (menuState) {
@@ -27,6 +30,22 @@ $(window).scroll(function(){
       $('.burger-3').css({'transform': 'rotate(-45deg)', 'top': '6px'})
     }
   })
+
+  $('a[href^="#"]').click(function () {
+    $root.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+    }, 500);
+    
+    if ($(this).hasClass('menu_mobile-item')) {
+      menuState = !menuState;
+      $('.menu_mobile').slideUp('fast')
+      $('.burger-1').css({'transform': 'rotate(45deg)', 'top': '6px'})
+      $('.burger-2').css({'transform': 'scale(0)'})
+      $('.burger-3').css({'transform': 'rotate(-45deg)', 'top': '6px'})
+    }
+
+    return false;
+});
 
 let fetchEr = () => {
     fetch('./assets/json/data.json')
@@ -255,3 +274,6 @@ $('.review_more').on('click', (e) => {
   }
   e.preventDefault();
 })
+
+$("#phone").mask("+375 (99) 999-99-99");
+$("#modalPhone").mask("+375 (99) 999-99-99");

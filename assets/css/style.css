@@ -63,6 +63,21 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 
+.btn-secondary {
+  color: #ffffff;
+  font-family: Circe;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0.18px;
+  border-radius: 5px;
+  background-color: #c21e2e;
+  border: none;
+  border-bottom: solid 4px #6f2c33;
+  padding: 20px 36px;
+  position: relative;
+}
+
 .btn-primary:before {
   margin-left: 60px;
   content: "";
@@ -121,19 +136,10 @@ section {
 }
 
 .section_title-big {
-    font-family: Circe;
-    font-size: 60px;
-    font-weight: 800;
-    line-height: 60px;
-    letter-spacing: 0.6px;
-}
-
-.section_title-big {
     color: #ffffff;
     font-family: Circe;
     font-size: 60px;
     font-weight: 800;
-    line-height: 60px;
     letter-spacing: 0.6px;
 }
 
@@ -1118,6 +1124,10 @@ footer {
     font-size: 26px;
   }
 
+  .feedback_phone {
+    font-size: 24px;
+  }
+
   .feedback_social-item, .feedback_social-item:hover {
     font-size: 20px;
   }
@@ -1168,6 +1178,10 @@ footer {
   .main_ticket {
     display: none;
   }
+
+  .how_container::before {
+    height: 550px;
+  }
   
   .receive_img {
     display: none;
@@ -1176,4 +1190,138 @@ footer {
   .test_tel-img {
     display: none;
   }
+}
+
+@media screen and (max-width: 576px) {
+  .main .section_title-big {
+    margin-top: 35px;
+  }
+
+  .main_subtitle {
+    margin: 15px 0 25px;
+  }
+
+  .main_list {
+    margin-top: 25px;
+  }
+
+  .section_title-big {
+    font-size: 40px;
+  }
+
+  .section_title {
+    font-size: 32px;
+  }
+
+  .pluces {
+    padding: 30px;
+  }
+
+  .pluces .section_title {
+    margin-bottom: 30px;
+  }
+
+  .pluces_col-text-container {
+    padding: 20px 0 0 25px;
+  }
+
+  .military {
+    padding: 70px 0 80px;
+  }
+
+  .how {
+    padding: 70px 0 55px;
+  }
+
+  .price .section_title-big {
+    margin: 30px 0;
+  }
+
+  .price_card {
+    margin-bottom: 5px;
+  }
+
+  .review {
+    padding-top: 70px;
+  }
+
+  .review_video-container {
+    margin-top: 30px;
+  }
+
+  .questions {
+    padding: 50px 0 35px;
+  }
+
+  .questions .section_title-big {
+    margin-bottom: 30px;
+  }
+
+  .feedback {
+    margin-top: 40px;
+  }
+
+  .feedback .section_title {
+    margin-bottom: 50px;
+  }
+
+  .feedback_title {
+    margin: 30px 0 20px;
+  }
+
+  .ymap-container {
+    margin-top: 50px;
+  }
+
+  .how_container::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .pluces_row .col-lg-6::before {
+    font-size: 80px;
+  }
+
+   .feedback_img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .feedback_social-img {
+    width: 30px;
+    height: 30px;
+  }
+
+   .feedback_geo,
+   .feedback_phone
+   {
+    font-size: 22px;
+  }
+
+   .feedback input {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+
+   .feedback textarea {
+    margin-bottom: 10px;
+    padding: 10px 20px;
+  }
+
+   .feedback_item {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .feedback_geo,
+  .feedback_phone
+  {
+   font-size: 20px;
+ }
+}
+
+.modal-body.feedback {
+  margin-top: 0px;
 }

@@ -28,14 +28,14 @@
         </div>
         <nav class="col-lg-6 d-lg-block d-none">
           <div class="d-flex justify-content-center align-items-center">
-            <a class="nav_link" href="">Стоимость</a>
-            <a class="nav_link mx-4" href="">Как мы работаем</a>
-            <a class="nav_link mr-4" href="">Отзывы</a>
-            <a class="nav_link" href="">Контакты</a>
+            <a class="nav_link" href="#price">Стоимость</a>
+            <a class="nav_link mx-4" href="#how">Как мы работаем</a>
+            <a class="nav_link mr-4" href="#reviews">Отзывы</a>
+            <a class="nav_link" href="#contacts">Контакты</a>
           </div>
         </nav>
         <div class="col-lg-3 col-md-5 d-none d-md-inline">
-          <a class="text-right phone_container" href="">
+          <a class="text-right phone_container" href="tel://+375336202023">
             <h5>+375 (33) 620-20-23</h5>
             <h6>пн-сб 09:00-18:00</h6>
           </a>
@@ -50,14 +50,14 @@
       </div>
     </div>
     <div class="menu_mobile">
-      <a class="text-center phone_container d-block d-md-none" href="">
+      <a class="text-center phone_container d-block d-md-none" href="tel://+375336202023">
         <h5>+375 (33) 620-20-23</h5>
         <h6>пн-сб 09:00-18:00</h6>
       </a>      
-      <a class="menu_mobile-item" href="">Стоимость</a>
-      <a class="menu_mobile-item" href="">Как мы работаем</a>
-      <a class="menu_mobile-item" href="">Отзывы</a>
-      <a class="menu_mobile-item" href="">Контакты</a>
+      <a class="menu_mobile-item" href="#price">Стоимость</a>
+      <a class="menu_mobile-item" href="#how">Как мы работаем</a>
+      <a class="menu_mobile-item" href="#reviews">Отзывы</a>
+      <a class="menu_mobile-item" href="#contacts">Контакты</a>
 		</div>
   </header>
 
@@ -75,7 +75,7 @@
               </h3>
           </div>
 
-          <a href="" class="btn glare btn-primary">Узнать вероятность получить военный билет</a>
+          <a href="" class="btn glare btn-primary" data-toggle="modal" data-target="#feedback">Узнать вероятность получить военный билет</a>
           <ul class="main_list">
               <li class="main_item col-lg-5 row flex-nowrap align-items-center">
                   <img src="./assets/img/main/clock.png" alt="" class="main_item-image">
@@ -158,7 +158,7 @@
 
   <section class="how">
     <div class="container">
-      <h1 class="section_title col-lg-6">Как ты получишь военный билет </h1>
+      <h1 class="section_title col-lg-6" id="how">Как ты получишь военный билет </h1>
       <div class="row">
         <div class="col-lg-9">
           <ul class="how_container">
@@ -181,7 +181,7 @@
       <h1 class="section_title">Бесплатная консультация</h1>
       <h3 class="military_subtitle">рассказ про бесплатную консультацию, что ты узнаешь, как это работает
           текст еще и ещещ</h3>
-      <a class="btn btn-primary" href="">Записаться на бесплатную консультацию</a>
+      <a class="btn btn-primary" data-toggle="modal" data-target="#feedback" href="">Записаться на бесплатную консультацию</a>
     </div>
   </section>
 
@@ -200,7 +200,7 @@
   </section>
 
   <section class="price">
-    <h1 class="section_title-big text-center">Стоимость наших услуг</h1>
+    <h1 class="section_title-big text-center" id="price">Стоимость наших услуг</h1>
     <div class="container">
       <div class="row">
         <div class="col-lg-6 mt-2">
@@ -211,7 +211,7 @@
               <h4>выгоднее на 260р</h4>
               <h6>чем в других организациях</h6>
             </div>
-            <a href="" class="btn btn-primary">Узнать подробнее</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#feedback">Узнать подробнее</a>
           </article>
         </div>
         <div class="col-lg-6 mt-2">
@@ -222,7 +222,7 @@
               <h4>выгоднее на 260р</h4>
               <h6>чем в других организациях</h6>
             </div>
-            <a href="" class="btn btn-primary">Узнать подробнее</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#feedback">Узнать подробнее</a>
           </article>
         </div>
         <div class="col-lg-6 mt-2">
@@ -233,7 +233,7 @@
               <h4>выгоднее на 260р</h4>
               <h6>чем в других организациях</h6>
             </div>
-            <a href="" class="btn btn-primary">Узнать подробнее</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#feedback">Узнать подробнее</a>
           </article>
         </div>
         <div class="col-lg-6 mt-2">
@@ -244,14 +244,14 @@
               <h4>выгоднее на 260р</h4>
               <h6>чем в других организациях</h6>
             </div>
-            <a href="" class="btn btn-primary">Узнать подробнее</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#feedback">Узнать подробнее</a>
           </article>
         </div>
         <div class="col-lg-12 mt-2">
           <div class="price_consultation w-100 text-center">
             <h5>Бесплатная первичная консультация</h5>
             <p>Пакет “СТАНДАРТ”, в который включена стоимость медицинского обследования, услуги адвоката и неограниченное количество консультаций.</p>
-            <a href="" class="btn btn-primary">Записаться на бесплатную консультацию</a>
+            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#feedback">Записаться на бесплатную консультацию</a>
           </div>
         </div>
       </div>
@@ -261,7 +261,7 @@
   <!-- section.review>h1.section_title+(div.review_item*3>video.review_video)+(div.review_item*6>(div.review_header.row>img.review_image+h3.review_title)+p.review_text) -->
   <section class="review">
     <div class="container">
-      <h1 class="section_title">Отзывы наших клиентов</h1>
+      <h1 class="section_title" id="reviews">Отзывы наших клиентов</h1>
       <div class="review_video-container"></div>
       <div class="review_wrapper"><div class="review_container"></div></div>
       <div class="text-center">
@@ -274,7 +274,7 @@
     <div class="container text-center">
       <h1 class="section_title">Хочешь получить военный билет законно?</h1>
       <h1 class="section_title">Приходи к нам и мы поможем</h1>
-      <a class="btn btn-primary mt-5" href="">Записаться на бесплатную консультацию</a>
+      <a class="btn btn-primary mt-5" href="" data-toggle="modal" data-target="#feedback">Записаться на бесплатную консультацию</a>
     </div>
   </section>
 
@@ -365,13 +365,13 @@
     <div class="container text-center">
       <h1 class="section_title">Не нашел ответ на свой вопрос?</h1>
       <h1 class="section_title">Задай его нам и мы подробно ответим!</h1>
-      <a class="btn btn-primary mt-5" href="">Записаться на бесплатную консультацию</a>
+      <a class="btn btn-primary mt-5" href="" data-toggle="modal" data-target="#feedback">Записаться на бесплатную консультацию</a>
     </div>
   </section>
 
   <section class="feedback">
     <div class="container">
-      <h1 class="section_title text-center">Контактная информация</h1>
+      <h1 class="section_title text-center" id="contacts">Контактная информация</h1>
       <div class="d-flex row">
         <form class="col-12 col-md-5 d-flex flex-column">
           <label for="name" class="feedback_label">Введи свое имя*</label>
@@ -392,12 +392,12 @@
           </div>
           <div class="feedback_item d-flex flex-row">
             <img src="./assets/img/feedback/phone.png" alt="" class="feedback_img">
-            <div class="container">
+            <div class="w-100">
               <p class="feedback_subtitle">Телефоны</p>
               <div class="d-flex row">
-                <a class="feedback_phone col-xl-5" href="">+375 33 620-20-23</a>
+                <a class="feedback_phone col-xl-5" href="tel://+375336202023">+375 33 620-20-23</a>
                 <span class="col-xl-1 d-none d-xl-inline feedback_slash">/</span>
-                <a class="feedback_phone col-xl-5" href="">+375 29 628-20-23</a>
+                <a class="feedback_phone col-xl-5" href="tel://+375336282023">+375 29 628-20-23</a>
               </div>
             </div>
           </div>
@@ -411,8 +411,8 @@
           </div>
           <h3 class="feedback_title">Или пиши нам в удобный мессенджер</h3>
           <div class="feedback_social">
-            <div class="d-flex flex-row"><a href="" class="feedback_social-item"><img src="./assets/img/feedback/telegram.png" alt="" class="feedback_social-img">@voennik.helpbot</a></div>
-            <div class="d-flex flex-row"><a href="" class="feedback_social-item"><img src="./assets/img/feedback/vk.png" alt="" class="feedback_social-img">/netkirzacham&nbsp;&nbsp;<span>(тут еще мемы смешные есть)</span></a></div>
+            <div class="d-flex flex-row"><a href="https://t.me/voennikbybot" class="feedback_social-item" target="_blank"><img src="./assets/img/feedback/telegram.png" alt="" class="feedback_social-img">@voennikbybot</a></div>
+            <div class="d-flex flex-row"><a href="https://vk.com/im?sel=-177345629" class="feedback_social-item" target="_blank"><img src="./assets/img/feedback/vk.png" alt="" class="feedback_social-img">/netkirzacham&nbsp;&nbsp;<span>(тут еще мемы смешные есть)</span></a></div>
           </div>
         </div>
       </div>
@@ -445,7 +445,7 @@
         <div class="col-lg-4 footer_feedback d-flex align-items-center align-items-lg-end flex-column">
           <div class="footer_social d-flex flex-row">
             <a href="" class="footer_social-item"><img src="./assets/img/footer/social/facebook.svg" alt="Facebook" class="footer_social-img"></a>
-            <a href="" class="footer_social-item"><img src="./assets/img/footer/social/vk.svg" alt="Вконтакте" class="footer_social-img"></a>
+            <a href="https://vk.com/netkirzacham" class="footer_social-item"><img src="./assets/img/footer/social/vk.svg" alt="Вконтакте" class="footer_social-img"></a>
             <a href="" class="footer_social-item"><img src="./assets/img/footer/social/ok.svg" alt="Одноклассники" class="footer_social-img"></a>
             <a href="" class="footer_social-item"><img src="./assets/img/footer/social/insta.svg" alt="Instagram" class="footer_social-img"></a>
           </div>
@@ -460,6 +460,71 @@
     </div>
   </footer>
 
-  <script src="./assets/js/main.js"></script>
+
+    <div id="feedback" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Контактная информация</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body feedback">
+                <div class="container">
+                    <div class="d-flex row">
+                      <form class="col-12 col-lg-5 d-flex flex-column">
+                        <label for="modalName" class="feedback_label">Введи свое имя*</label>
+                        <input id="modalName" type="text" class="feedback_input" placeholder="Например:  Сергей">
+                        <label for="modalPhone" class="feedback_label">Введи контактный номер телефона*</label>
+                        <input id="modalPhone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
+                        <label for="modalText" class="feedback_label"></label>
+                        <textarea rows="7" id="modalText" placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
+                        <a href="" class="btn btn-primary">Отправить сообщение</a>
+                      </form>
+                      <div class="feedback_info col-12 col-lg-6 offset-lg-1">
+                        <div class="feedback_item d-flex flex-row">
+                          <img src="./assets/img/feedback/geo.png" alt="" class="feedback_img">
+                          <div class="">
+                            <p class="feedback_subtitle">Местоположение</p>
+                            <a class="feedback_geo" href="">г. Минск, ул. Зыбицкая 4, офис 39</a>
+                          </div>
+                        </div>
+                        <div class="feedback_item d-flex flex-row">
+                          <img src="./assets/img/feedback/phone.png" alt="" class="feedback_img">
+                          <div class="w-100">
+                            <p class="feedback_subtitle">Телефоны</p>
+                            <div class="d-flex row">
+                              <a class="feedback_phone col-12" href="tel://+375336202023">+375 33 620-20-23</a>
+                              <a class="feedback_phone col-12" href="tel://+375336282023">+375 29 628-20-23</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="feedbackback_item d-flex flex-row">
+                          <img src="./assets/img/feedback/watch.png" alt="" class="feedback_img">
+                          <div class="">
+                            <p class="feedback_subtitle">Режим работы</p>
+                            <p class="feedback_schedule">Офис: ПН-СБ 09:00-18:00</p>
+                            <p class="feedback_schedule">Горячая линия: Круглосуточно</p>
+                          </div>
+                        </div>
+                        <h3 class="feedback_title">Или пиши нам в удобный мессенджер</h3>
+                        <div class="feedback_social">
+                          <div class="d-flex flex-row"><a href="https://t.me/voennikbybot" class="feedback_social-item" target="_blank"><img src="./assets/img/feedback/telegram.png" alt="" class="feedback_social-img">@voennikbybot</a></div>
+                          <div class="d-flex flex-row"><a href="https://vk.com/im?sel=-177345629" class="feedback_social-item" target="_blank"><img src="./assets/img/feedback/vk.png" alt="" class="feedback_social-img">/netkirzacham&nbsp;&nbsp;<span>(тут еще мемы смешные есть)</span></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <script type="text/javascript" src="./vendor/mask/jquery.maskedinput.min.js"></script>
+  <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
