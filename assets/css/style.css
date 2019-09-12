@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6, p, a {
   font-family: Circe;
 }
 
+a:hover, a:focus, a:active {
+  color: #6f2c33;
+  text-decoration: none;
+}
+
 .btn-primary {
   color: #010101;
   font-family: Circe;
