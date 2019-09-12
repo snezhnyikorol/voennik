@@ -596,7 +596,7 @@ header {
 }
 
 .price_card h5 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -607,7 +607,7 @@ header {
 }
 
 .price_card-cost h4 {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
 }
 
@@ -738,7 +738,7 @@ header {
 .feedback_phone, .feedback_phone:hover  {
   color: #6f2c33;
   font-family: Circe;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 0.24px;
   overflow-wrap: normal;
