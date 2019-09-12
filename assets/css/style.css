@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p, a {
 }
 
 .btn-primary {
+  overflow: hidden;
   color: #010101;
   font-family: Circe;
   font-size: 18px;
@@ -53,10 +54,52 @@ h1, h2, h3, h4, h5, h6, p, a {
   border: none;
   border-bottom: solid 4px #9fa02e;
   padding: 20px 36px;
+  position: relative;
 }
 
-.btn-primary:focus {
+.btn-primary:before {
+  margin-left: 60px;
+  content: "";
+  width: 30px;
+  height: 300px;
+  background: #fff;
+  animation-delay: 0.05s;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  animation-timing-function: ease-in-out;
+  transition: all 0.1s;
+  animation-name: radiance;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: rotate(45deg);
+  opacity: 0.9;
+}
+
+@keyframes radiance { 
+  0% { 
+    left: -30px; 
+    margin-left: 0px; 
+  } 
+  30% { 
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+  100% { 
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+}
+
+.btn-primary:active, .btn-primary:hover {
+  background-color: #f5f749!important;
+  border-color: #9fa02e!important;
+  color: #010101!important;
   box-shadow: none;
+} 
+
+.btn-primary:focus {
+  box-shadow: none!important;
 }
 
 section {
@@ -315,7 +358,7 @@ header {
 /* pluces */
 .pluces {
   padding-bottom: 100px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .pluces .section_title {
@@ -804,7 +847,7 @@ header {
 
 .loader {
 	position: absolute;
-	z-index: 15;
+	z-index: 0;
 	top: -100%;
 	left: 0;
 	box-sizing: border-box;
@@ -1102,5 +1145,19 @@ footer {
 
   .footer_info-item {
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main_ticket {
+    display: none;
+  }
+  
+  .receive_img {
+    display: none;
+  }
+
+  .test_tel-img {
+    display: none;
   }
 }
