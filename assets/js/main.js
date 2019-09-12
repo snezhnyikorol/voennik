@@ -74,16 +74,17 @@ fetchEr();
 
 let render = (data) => {
     let container = $('.review_container');
+    let videoContainer = $('.review_video-container');
     data.forEach(el => {
         if (el.type === 'video') {
             $('<div/>', {
-                class: 'review_item',
+                class: 'review_video-item',
                 append: $('<video>', {
                     class: 'review_video',
                     src: el.src,
                     poster: el.poster
                 })
-            }).appendTo(container);
+            }).appendTo(videoContainer);
         } else if (el.type === 'article') {
             $('<div/>', {
                 class: 'review_item',
@@ -227,3 +228,30 @@ $('.questions_card').on('click', (e) => {
 
 })
 
+let toogle = true;
+
+// $('.review_more').on('click', (e) => {
+//   let wrapper = $('.review_wrapper')
+//   if ($(wrapper).hasClass('active')) {
+//     $(wrapper).removeClass('active')
+//     $('.review_more').text('Смотреть больше отзывов')
+//   } else {
+//     $(wrapper).addClass('active')
+//     $('.review_more').text('Свернуть')
+//   }
+//   e.preventDefault();
+// })
+
+$('.review_more').on('click', (e) => {
+  let wrapper = $('.review_wrapper')
+  if (!$(wrapper).hasClass('active')) {
+    $(wrapper).animate({height: $('.review_container').height()}, 600)
+    $('.review_more').text('Свернуть')
+    $(wrapper).addClass('active')
+  } else {
+    $(wrapper).animate({height: '500px'}, 600)
+    $('.review_more').text('Смотреть больше отзывов')
+    $(wrapper).removeClass('active')
+  }
+  e.preventDefault();
+})

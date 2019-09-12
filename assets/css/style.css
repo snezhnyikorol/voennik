@@ -56,6 +56,10 @@ h1, h2, h3, h4, h5, h6, p, a {
   padding: 20px 36px;
 }
 
+.btn-primary:focus {
+  box-shadow: none;
+}
+
 section {
   position: relative;
 }
@@ -96,6 +100,12 @@ section {
   position: absolute;
   bottom: -100px;
   transform: scale(1.2);
+  z-index: 1;
+}
+
+section:not(.lined_bot) {
+  z-index: 2;
+  position: relative;
 }
 
 .lined_top::before {
@@ -109,12 +119,13 @@ section {
   position: absolute;
   top: -100px;
   transform: scale(1.2);
+  z-index: 1;
 }
 
 .military {
-  background: url(../img/military.png) center/cover no-repeat;
+  background-image: url(../img/camo.png);
   background-color: #6f2c33;
-  padding: 115px 0 110px 0;
+  padding: 100px 0 110px 0;
   color: #fff;
 }
 
@@ -180,7 +191,11 @@ header {
   /* background: radial-gradient(394.57px at 90.46% 88.89%, #8D71BD 0%, #663793 100%); */
 }
 
-.menu_mobile a {
+.menu_mobile .phone_container {
+  margin-top: 35px;
+}
+
+.menu_mobile-item {
   display: block;
   color: #000000;
   font-family: Circe;
@@ -460,24 +475,72 @@ header {
 
 .review_item {
   width: 100%;
-  /* width: 350px; */
+  border-radius: 30px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 0px 5px #ff0000;
+  border: 2px solid #e8e8e8;
+  background-color: #ffffff;
+  display: inline-block;
+}
+
+.review_video-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:  345px;
   border-radius: 30px;
   box-shadow: 0px 0px 0px 5px #ff0000;
   border: 2px solid #e8e8e8;
   background-color: #ffffff;
   margin: 10px 0;
-  display: inline-block;
+}
+
+.review_video-item:nth-child(2) {
+  margin: 10px 30px;
+}
+
+.review_video-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 70px;
+  padding: 0 5px;
 }
 
 .review_container {
-  columns: 3 350px;
+  columns: 3 345px;
   column-gap: 30px;
-  margin-top: 70px;
+  padding: 0 5px;
 }
 
-/* .review_video {
+.review_wrapper {
+  height: 550px;
+  overflow-y: hidden;  
+  position: relative;
+}
 
-} */
+.review_wrapper::after {
+  height: 200px;
+  content: '';
+  width: 100%;
+  display: block;
+  background: linear-gradient(transparent, #ffffff);
+  position: absolute;
+  bottom: 0px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); 
+}
+
+.review_more {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.review_wrapper.active::after {
+  height: 0px;
+}
+
+.review_video {
+  width: 100%;
+}
 
 .review_text {
   color: #000000;
@@ -511,7 +574,7 @@ header {
 
 .price_card {
   border-radius: 30px;
-  background: url(../img/military.png) center/cover;
+  background: url(../img/camo.png);
   background-color: #6f2c33;
   padding: 54px 38px 23px;
   color: #fff;
@@ -550,7 +613,7 @@ header {
 
 .price_consultation {
   border-radius: 30px;
-  background: url(../img/military.png) center/cover;
+  background: url(../img/camo.png) center/cover;
   padding: 50px 80px;
   color: #000;
 }
@@ -735,7 +798,7 @@ header {
 
   #map-yandex {
 	position: relative;
-	z-index: 3;
+	z-index: 0;
 	width: 100%;
 	height: 555px;
 	cursor: pointer;
@@ -802,6 +865,9 @@ header {
 /* footer */
 footer {
   padding-bottom: 55px;
+  z-index: 2;
+  position: relative;
+  padding-top: 30px;
 }
 
 .footer_info-item {
@@ -908,6 +974,11 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+  .main_ticket {
+    right: -7%;
+    transform: scale(0.7);
+  }
+
   .section_title-big {
     font-size: 50px;
   }
@@ -944,6 +1015,10 @@ footer {
     font-size: 20px;
   }
 
+  .how_ticket {
+    transform: scale(0.67);
+  }
+
   .how_container::before {
     height: 400px;
   }
@@ -957,7 +1032,7 @@ footer {
   }
 
   .receive_img {
-    height: 90%;
+    height: 85%;
   }
 
   .price .section_title-big {
@@ -976,11 +1051,60 @@ footer {
     font-size: 20px;
   }
 
+  .review_container {
+    columns: 3 270px;
+  }
+  
+  .review_video-item {
+    width: 290px;
+  }
+
   .feedback_title {
     font-size: 26px;
   }
 
   .feedback_social-item, .feedback_social-item:hover {
     font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+  .main_ticket {
+    bottom: -60%;
+    right: -20%;
+    transform: scale(0.4);
+  }
+
+  .test_tel-img {
+    width: 100%;
+  }
+
+  .receive_img {
+    height: 65%;
+  }
+
+  .review_container {
+    columns: 1;
+  }
+
+  .review_video-container {
+    flex-direction: column;
+  }
+
+  .review_video-item {
+    width: 100%;
+  }
+  
+  .review_video-item:nth-child(2) {
+    margin: 10px 0px
+  }
+
+  .footer_info {
+    order: 2;
+  }
+
+  .footer_info-item {
+    margin-top: 20px;
   }
 }
