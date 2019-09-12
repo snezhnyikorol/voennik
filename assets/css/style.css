@@ -39,6 +39,7 @@ html {
 h1, h2, h3, h4, h5, h6, p, a {
   margin: 0;
   padding: 0;
+  font-family: Circe;
 }
 
 .btn-primary {
@@ -204,8 +205,11 @@ header {
 
 .phone_container {
   color: #000000;
-  font-weight: 700;
   letter-spacing: 0.2px;
+}
+
+.phone_container * {
+  font-weight: 700; 
 }
 
 .phone_container h5 {
@@ -300,7 +304,7 @@ header {
 /* pluces */
 .pluces {
   padding-bottom: 100px;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 
 .pluces .section_title {
