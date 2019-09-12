@@ -746,6 +746,13 @@ header {
   margin-bottom: -7px;
 }
 
+.feedback_slash {
+  color: #b8b8b8;
+  font-family: Circe;
+  font-size: 17px;
+  font-weight: 800;
+}
+
 .feedback input, .feedback textarea {
   border-radius: 5px;
   border: 2px solid #c6c6c6;
