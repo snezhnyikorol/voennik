@@ -348,11 +348,12 @@ header {
   position: relative;
 }
 
-.main .btn::before {
+.main .btn::after {
   content: url(../img/main/arrow.png);
   position: absolute;
   right: -96px;
   bottom: 10px;
+  z-index: 2;
 }
 
 /* pluces */
@@ -1006,7 +1007,7 @@ footer {
 @media screen and (max-width: 1500px) {
   .main_ticket {
     right: 2%;
-    transform: scale(0.8);
+    transform: scale(0.92);
     z-index: 2;
     top: 230px;
   }
@@ -1021,7 +1022,7 @@ footer {
 @media screen and (max-width: 1200px) {
   .main_ticket {
     right: -7%;
-    transform: scale(0.7);
+    transform: scale(0.78);
   }
 
   .section_title-big {
