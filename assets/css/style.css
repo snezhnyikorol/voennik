@@ -1149,6 +1149,10 @@ footer {
     height: 65%;
   }
 
+  .price_card {
+    min-height: inherit;
+  }
+
   .review_container {
     columns: 1;
   }
@@ -1175,6 +1179,30 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .section_title {
+    font-size: 32px;
+  }
+
+  .section_title-big {
+    font-size: 32px;
+  }
+
+  .test_subtitle {
+    font-size: 20px;
+  }
+
+  .price_card h5, .price_card-cost h4 {
+    font-size: 28px;
+  }
+
+  .price p {
+    font-size: 18px;
+  }
+
+  .price_consultation {
+    padding: 25px 30px;
+  }
+
   .main_ticket {
     display: none;
   }
@@ -1203,14 +1231,6 @@ footer {
 
   .main_list {
     margin-top: 25px;
-  }
-
-  .section_title-big {
-    font-size: 40px;
-  }
-
-  .section_title {
-    font-size: 32px;
   }
 
   .pluces {
@@ -1253,6 +1273,10 @@ footer {
     padding: 50px 0 35px;
   }
 
+  .questions_card {
+    padding: 15px 20px;
+  }
+
   .questions .section_title-big {
     margin-bottom: 30px;
   }
@@ -1279,6 +1303,22 @@ footer {
 }
 
 @media screen and (max-width: 475px) {
+  .section_title {
+    font-size: 26px;
+  }
+
+  .section_title-big {
+    font-size: 26px;
+  }
+
+  .test_subtitle {
+    font-size: 18px;
+  }
+
+  .price_consultation {
+    padding: 15px;
+  }
+
   .pluces_row .col-lg-6::before {
     font-size: 80px;
   }
@@ -1319,7 +1359,11 @@ footer {
   .feedback_phone
   {
    font-size: 20px;
- }
+  }
+
+  .pluces_row .col-lg-6::before {
+    font-size: 65px;
+  }
 }
 
 .modal-body.feedback {
