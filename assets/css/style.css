@@ -63,21 +63,6 @@ a:hover, a:focus, a:active {
   position: relative;
 }
 
-.btn-secondary {
-  color: #ffffff;
-  font-family: Circe;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  letter-spacing: 0.18px;
-  border-radius: 5px;
-  background-color: #c21e2e;
-  border: none;
-  border-bottom: solid 4px #6f2c33;
-  padding: 20px 36px;
-  position: relative;
-}
-
 .btn-primary:before {
   margin-left: 60px;
   content: "";
@@ -531,7 +516,6 @@ header {
   width: 100%;
   border-radius: 30px;
   margin: 10px 0;
-  box-shadow: 0px 0px 0px 5px #ff0000;
   border: 2px solid #e8e8e8;
   background-color: #ffffff;
   display: inline-block;
@@ -542,8 +526,7 @@ header {
   justify-content: center;
   align-items: center;
   width:  345px;
-  border-radius: 30px;
-  box-shadow: 0px 0px 0px 5px #ff0000;
+  border-radius: 30px;  
   border: 2px solid #e8e8e8;
   background-color: #ffffff;
   margin: 10px 0;
