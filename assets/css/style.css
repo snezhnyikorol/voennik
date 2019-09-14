@@ -351,13 +351,13 @@ header {
   z-index: 2;
 }
 
-.main_ticket::before {
+/* .main_ticket::before {
   content: url(../img/main/ticket-substrate.png);
   position: absolute;
   top: 0px;
   right: 0px;
   z-index: 1;
-}
+} */
 
 .main .btn {
   position: relative;
@@ -1324,4 +1324,55 @@ footer {
 
 .modal-body.feedback {
   margin-top: 0px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  98% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.pulse-item {
+  opacity: 0;
+  width: 700px;
+  height: 700px;
+  border-radius: 700px;
+  border: 2px solid #c7a1a5;
+  position: absolute;
+  animation: pulse 5s infinite ease-in-out;
+}
+
+.pulse-item:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.pulse-item:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.pulse-item:nth-child(3) {
+  animation-delay: 3s;
+}
+
+.pulse-item:nth-child(4) {
+  animation-delay: 4s;
+}
+
+.pulse-item:nth-child(5) {
+  animation-delay: 5s;
+}
+
+.pulse {
+  position: absolute;
+  top: 0px;
+  right: 700px;
+  z-index: 1;
 }
