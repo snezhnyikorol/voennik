@@ -221,13 +221,7 @@ header {
 }
 
 .menu_mobile {
-  /* display: block;
-  visibility: hidden;
-  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
-  z-index: 100;
-  height: 0; */
   display: none;
-  /* background: radial-gradient(394.57px at 90.46% 88.89%, #8D71BD 0%, #663793 100%); */
 }
 
 .menu_mobile .phone_container {
@@ -817,7 +811,6 @@ header {
   font-family: Circe;
   font-size: 18px;
   font-weight: 400;
-  /* Text style for "/netkirzac" */
 }
 
 .feedback_social-img {
@@ -831,14 +824,12 @@ header {
 /* map */
 .ymap-container {
 	position: relative;
-	/* margin: 3em 0 2em 0; */
 	overflow: hidden;
 	cursor: pointer;
 	background: url('../img/yandex-before-load.jpg') #ffffff no-repeat;
 	background-position: center center;
 	background-size: cover;
   margin-top: 100px;
-	/* box-shadow: 0 0 2em  0 rgba(0,0,0,.2); */
   }
    
 

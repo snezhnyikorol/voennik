@@ -9,12 +9,11 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href='./assets/css/style.css'>
     <link rel="stylesheet" type="text/css" href="assets/fonts/stylesheet.css">
-    <title>Document</title>
+    <title>ВОЕННИК.БАЙ - Служба помощи призывникам в Беларуси</title>
 </head>
 <body>
 
@@ -268,7 +267,6 @@
     </div>
   </section>
 
-  <!-- section.review>h1.section_title+(div.review_item*3>video.review_video)+(div.review_item*6>(div.review_header.row>img.review_image+h3.review_title)+p.review_text) -->
   <section class="review">
     <div class="container">
       <h1 class="section_title" id="reviews">Отзывы наших клиентов</h1>
@@ -383,14 +381,14 @@
     <div class="container">
       <h1 class="section_title text-center" id="contacts">Контактная информация</h1>
       <div class="d-flex row">
-        <form class="col-12 col-md-5 d-flex flex-column">
+        <form class="col-12 col-md-5 d-flex flex-column" id="form" method="POST" action="">
           <label for="name" class="feedback_label">Введи свое имя*</label>
-          <input id="name" type="text" class="feedback_input" placeholder="Например:  Сергей">
+          <input id="name" name="name" type="text" class="feedback_input" placeholder="Например:  Сергей">
           <label for="phone" class="feedback_label">Введи контактный номер телефона*</label>
-          <input id="phone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
+          <input id="phone" name="phone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
           <label for="text" class="feedback_label"></label>
-          <textarea rows="7" id='text' placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
-          <a href="" class="btn btn-primary">Отправить сообщение</a>
+          <textarea name="text" rows="7" id='text' placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
+          <a href="" class="btn btn-primary" id="send">Отправить сообщение</a>
         </form>
         <div class="feedback_info col-12 col-md-6 offset-md-1">
           <div class="feedback_item d-flex flex-row">
@@ -433,7 +431,7 @@
     <div class="ymap-container">
       <div class="loader loader-default"></div>
       <div id="map-yandex"></div>
-    </div><!-- .ymap-container -->
+    </div>
   </section>
 
   <footer>
@@ -483,14 +481,14 @@
             <div class="modal-body feedback">
                 <div class="container">
                     <div class="d-flex row">
-                      <form class="col-12 col-lg-5 d-flex flex-column">
+                      <form class="col-12 col-lg-5 d-flex flex-column" id="formModal" method="POST">
                         <label for="modalName" class="feedback_label">Введи свое имя*</label>
-                        <input id="modalName" type="text" class="feedback_input" placeholder="Например:  Сергей">
+                        <input name="name" id="modalName" type="text" class="feedback_input" placeholder="Например:  Сергей">
                         <label for="modalPhone" class="feedback_label">Введи контактный номер телефона*</label>
-                        <input id="modalPhone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
+                        <input name="phone" id="modalPhone" type="text" class="feedback_input" placeholder="+375 (__) ___-__-__">
                         <label for="modalText" class="feedback_label"></label>
-                        <textarea rows="7" id="modalText" placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
-                        <a href="" class="btn btn-primary">Отправить сообщение</a>
+                        <textarea name="text" rows="7" id="modalText" placeholder="Например: У меня есть вопрос, дают ли отсрочку после операции по коррекции зрения?"></textarea>
+                        <a href="" class="btn btn-primary" id="sendModal">Отправить сообщение</a>
                       </form>
                       <div class="feedback_info col-12 col-lg-6 offset-lg-1">
                         <div class="feedback_item d-flex flex-row">

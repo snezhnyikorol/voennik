@@ -12,6 +12,26 @@ $(window).scroll(function(){
     checkMap()
   });
 
+$('#send').click((e) => {
+  $('#form').submit()
+  e.preventDefault()
+})
+
+$('#sendModal').click((e) => {
+  $('#formModal').submit()
+  e.preventDefault()
+})
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  let form_data = $(this).serialize();
+  let url = 'mailer/send.php';
+  let posting = $.post(url, form_data);
+  // posting.done(function(data) {
+  //   console.log(data)
+  // })
+})
+
   let menuState = true;
 
   var $root = $('html, body');
@@ -57,15 +77,8 @@ let fetchEr = () => {
         $.each(result, function(key, value) { 
         myArray.push(value);
         });
-        // let data = reorder(myArray, 3);
         let data = myArray;
         render(data);
-        // $('.review_container').masonry({
-        //     itemSelector: '.review_item',
-        //     columnWidth: 360,
-        //     horizontalOrder: true,
-        //     gutter: 15
-        // });
     }, false)
     .catch(e => {
         console.log(e);
@@ -248,18 +261,6 @@ $('.questions_card').on('click', (e) => {
 })
 
 let toogle = true;
-
-// $('.review_more').on('click', (e) => {
-//   let wrapper = $('.review_wrapper')
-//   if ($(wrapper).hasClass('active')) {
-//     $(wrapper).removeClass('active')
-//     $('.review_more').text('Смотреть больше отзывов')
-//   } else {
-//     $(wrapper).addClass('active')
-//     $('.review_more').text('Свернуть')
-//   }
-//   e.preventDefault();
-// })
 
 $('.review_more').on('click', (e) => {
   let wrapper = $('.review_wrapper')
