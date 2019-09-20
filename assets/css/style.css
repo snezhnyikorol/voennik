@@ -82,6 +82,19 @@ a:hover, a:focus, a:active {
   opacity: 0.9;
 }
 
+.btn_wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.btn_wrapper::before {
+  content: url(../img/main/arrow.png);
+  position: absolute;
+  right: -96px;
+  bottom: 10px;
+  z-index: 2;
+}
+
 @keyframes radiance { 
   0% { 
     left: -30px; 
@@ -287,6 +300,12 @@ header {
 
 .main .section_title-big {
   margin-top: 70px;
+  line-height: 1;
+}
+
+.main .section_title-big span
+{
+  color: #f5f749;
 }
 
 .main_subtitle {
@@ -338,17 +357,10 @@ header {
   z-index: 1;
 } */
 
-.main .btn {
+/* .main .btn {
   position: relative;
-}
+} */
 
-.main .btn::after {
-  content: url(../img/main/arrow.png);
-  position: absolute;
-  right: -96px;
-  bottom: 10px;
-  z-index: 2;
-}
 
 /* pluces */
 .pluces {
@@ -1155,6 +1167,10 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+  .btn_wrapper::before {
+    right: -76px;
+  }
+
   .section_title {
     font-size: 32px;
   }
@@ -1197,6 +1213,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+  .btn_wrapper::before {
+    display: none;
+  }
   .main .section_title-big {
     margin-top: 35px;
   }
