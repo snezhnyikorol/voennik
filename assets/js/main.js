@@ -40,29 +40,31 @@ $('form').submit(function(e) {
     menuState = !menuState;
     if (menuState) {
       $('.menu_mobile').slideUp('slow')
+      $('html').removeClass('noscroll')
       $('.burger-1').css({'transform': 'rotate(0deg)', 'top': '0px'})
       $('.burger-2').css({'transform': 'scale(1)'})
       $('.burger-3').css({'transform': 'rotate(0deg)', 'top': '12px'})
     } else {
       $('.menu_mobile').slideDown('slow')
+      $('html').addClass('noscroll')
       $('.burger-1').css({'transform': 'rotate(45deg)', 'top': '6px'})
       $('.burger-2').css({'transform': 'scale(0)'})
       $('.burger-3').css({'transform': 'rotate(-45deg)', 'top': '6px'})
     }
   })
 
-  $('a[href^="#"]').click(function () {
-    $root.animate({
-        scrollTop: $( $.attr(this, 'href') ).offset().top - 100
-    }, 500);
-    
+  $('a[href^="#"]').click(function () {    
     if ($(this).hasClass('menu_mobile-item')) {
       menuState = !menuState;
       $('.menu_mobile').slideUp('fast')
-      $('.burger-1').css({'transform': 'rotate(45deg)', 'top': '6px'})
-      $('.burger-2').css({'transform': 'scale(0)'})
-      $('.burger-3').css({'transform': 'rotate(-45deg)', 'top': '6px'})
+      $('html').removeClass('noscroll')
+      $('.burger-1').css({'transform': 'rotate(0deg)', 'top': '0px'})
+      $('.burger-2').css({'transform': 'scale(1)'})
+      $('.burger-3').css({'transform': 'rotate(0deg)', 'top': '12px'})
     }
+    $root.animate({
+      scrollTop: $( $.attr(this, 'href') ).offset().top - 100
+    }, 500);
 
     return false;
 });

@@ -247,7 +247,7 @@ header {
   font-family: Circe;
   font-size: 18px;
   font-weight: 700;
-  padding: 35px 0;
+  padding: 25px 0;
   text-align: center;
 }
 
@@ -617,6 +617,7 @@ header {
 }
 
 .price_card {
+  height: calc(100% - 30px);
   border-radius: 30px;
   background: url(../img/camo.png);
   background-color: #6f2c33;
@@ -643,10 +644,20 @@ header {
   opacity: 0.6;
   font-size: 22px;
   font-weight: 400;
+  flex-grow: 1;
+}
+
+.price_card-price {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.price_card-cost {
+  color: #f5f749;
 }
 
 .price_card-cost h4 {
-  font-size: 34px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -674,6 +685,34 @@ header {
   font-weight: 400;
   margin-top: 36px;
   margin-bottom: 50px;
+}
+
+/* staff */
+.staff {
+  padding: 70px 0 50px;
+}
+
+.staff .section_title-big {
+  margin-bottom:30px;
+}
+
+.staff_img {
+  width: 60%;
+  border-radius: 30px;
+  margin: 10px 0;
+  border: 2px solid #e8e8e8;
+}
+
+.staff_text {
+  color: #000000;
+  font-family: Circe;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.staff_item {
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* questions */
@@ -1108,6 +1147,10 @@ footer {
     width: 290px;
   }
 
+  .staff_img {
+    width: 70%;
+  }
+
   .feedback_title {
     font-size: 26px;
   }
@@ -1139,6 +1182,7 @@ footer {
 
   .price_card {
     min-height: inherit;
+    height: auto;
   }
 
   .review_container {
@@ -1157,6 +1201,10 @@ footer {
     margin: 10px 0px
   }
 
+  .staff_img {
+    width: 80%;
+  }
+
   .footer_info {
     order: 2;
   }
@@ -1166,7 +1214,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .btn_wrapper::before {
     right: -76px;
   }
@@ -1197,6 +1245,22 @@ footer {
 
   .main_ticket {
     display: none;
+  }
+
+  .staff {
+    padding-bottom: 30px;
+  }
+
+  .staff_img {
+    width: 50%;
+  }
+
+  .staff_item {
+    margin-bottom: 20px;
+  }
+
+  .questions {
+    padding-top: 30px;
   }
 
   .how_container::before {
@@ -1265,7 +1329,7 @@ footer {
   }
 
   .questions {
-    padding: 50px 0 35px;
+    padding: 30px 0 35px;
   }
 
   .questions_card {
@@ -1312,6 +1376,10 @@ footer {
 
   .price_consultation {
     padding: 15px;
+  }
+
+  .staff_img {
+    width: 60%;
   }
 
   .pluces_row .col-lg-6::before {
@@ -1414,4 +1482,8 @@ footer {
   top: 0px;
   right: 700px;
   z-index: 1;
+}
+
+.noscroll {
+  overflow: hidden;
 }
